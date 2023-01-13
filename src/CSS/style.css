@@ -1,0 +1,371 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Seção Inicio*/
+
+.background{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:25px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    /* menu fixo */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 99; 
+}
+
+nav h2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+nav span{
+    color:rgb(190, 44, 44);
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color:red;
+    transform: scale(1.2);
+}
+
+.btn{
+    background-color: rgb(190, 44, 44);
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .4s;
+    cursor: pointer;
+
+    animation: pulse 3s infinite;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    50%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100%{
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    position:absolute;
+    top:50%;
+    left: 10%;
+    transform: translatey(-50);
+}
+
+h4{
+color:white;
+letter-spacing: 3px;
+font-size: 25px;
+}
+
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 55px;
+}
+h1 span{
+    color: rgb(190, 44, 44);
+}
+
+h3{
+    color: white;
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin-bottom: 50px; 
+}
+
+.avatar{
+    width: 1100px;
+    padding: 0px 0px 0px 700px;
+    position:absolute;
+		left:20%;
+		top:0%;
+		margin-left:-110px;
+		margin-top:-110px; 
+
+        animation: updown 3s linear infinite;
+}
+@keyframes updown{
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+/*Seção Sobre Mim*/
+
+.background-sobre{
+    background-color: #191919;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.main-sobre img{
+    width: 275px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.main-sobre{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 1130px;
+margin: 0 auto;
+}
+
+.text-sobre{
+    width: 550px;
+}
+
+.text-sobre h2{
+    color: white;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.text-sobre h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.text-sobre h5 span{
+    color: rgb(190, 44, 44);
+}
+
+.text-sobre p{
+    color: #dababa;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+/*Seção habilidades*/
+
+.container-serviços{
+    background-color: black;
+    width: 100%;
+    padding: 100px 0px;
+    color: white;
+}
+
+.titulo h2{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.caixas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #191919;
+    height: 365px;
+    width: 355px;
+    border: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    margin: 20px 0px;
+    color: rgb(190, 44, 44);
+}
+.card h5{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.card p{
+    font-size: 16px;
+    color: #dababa;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+/*seção de projetos*/
+
+.container-projetos{
+    background-color: #191919;
+    color: white;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card-project{
+    background-color: black;
+    height: 365px;
+    width: 355px;
+    border: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card-project h5{
+    font-size: 30px ;
+    margin-bottom: 15px ;
+}
+.card-project p{
+    color: #dababa;
+    margin-bottom: 15px;
+}
+
+.card-project img{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+/* .btn-seta{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn-seta:hover{
+    background-color: rgb(190, 44, 44);
+}
+.btn-seta.btn-voltar{
+    transform: rotatey(180deg);
+} */
+
+/*Seção de contato e rodapé*/
+
+footer{
+ background-color: #191919; 
+ position: relative;
+ width: 100%;
+ height: 250px;  
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+footer h6{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer h6 span{
+    color: rgb(190, 44, 44);
+}
+
+footer p{
+    font-size: 15px;
+    color: #dababa;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.poibido{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+
+.redes-sociais a{
+    background-color: rgb(190, 44, 44);
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 25px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.redes-sociais:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
